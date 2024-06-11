@@ -5,6 +5,6 @@ import com.example.ExternalModel
 import de.jensklingenberg.ktorfit.http.GET
 
 interface IpService {
-    @GET("https://google.com")
-    suspend fun getIp(): ExternalModel
+    @GET(API.IP)
+    suspend fun getIp(): String
 }
